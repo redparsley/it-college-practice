@@ -1,0 +1,72 @@
+ :root {
+    --dark-blue-color: #08134C;
+    --light-blue-color: #565C79;
+    --gray-color-text: #7F7F7F;
+}
+
+body {
+    padding: 2em 0 ;
+}
+
+.add_main-heading {
+    font-weight: 800;
+    color: var(--dark-blue-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat, verdana, sans-serif;
+}
+
+.table {
+    text-align: center;
+} 
+
+.thead th[data-type]::after {
+    content: url("./img/filter.svg");
+    padding-left: .4em;
+}
+
+.thead th[data-type] {
+    cursor: pointer;
+}
+
+.thead th {
+    white-space: nowrap;
+    width: 30vw;
+}
+
+.filter-inp {
+    max-width: 60%;
+}
+
+.wrapper-filters {
+    display: flex;
+    gap: 1.2em;
+    align-items: center;
+}
+
+.filter-el {
+    background-color: var(--bs-gray-200);
+}
+
+.filter-inp-container {
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+}
+
+.dropdown-menu {
+    margin-top: 1em;
+}
+
+.dropdown-inside {
+    display: flex;
+    padding: 1.2em;
+    gap: .3em;
+    align-items: center;
+}
+
+.error {
+    font-weight: 500;
+    color: red;
+}
